@@ -2,6 +2,8 @@
 
 This project was my attempt to challenge a highly skilled friend at chess. Recognizing my limitations in chess skills, I aimed to leverage my coding knowledge to create an engine capable of evaluating many more positions than a human could. Despite the challenges, I gained invaluable experience and learned a lot during this project.
 
+Play against the engine [here](https://naapeli.github.io/Chess-engine/). Make moves by dragging the pieces or clicking the piece first and the target square second. The UI shows which moves are possible. After making a move, the engine starts to think and eventually makes a move. One can adjust the time the engine is allowed to think from the UI.
+
 ## Key techniques implemented
 ### Move generation
 - Self-made movegenerator that achieves around 370 kN/s (kilo nodes per second)
