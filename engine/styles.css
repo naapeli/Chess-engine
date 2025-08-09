@@ -1,0 +1,259 @@
+:root {
+    --bg1: #EEF5FF;
+    --bg2: #d3e3f8;
+    --bg3: #c4ddff;
+    --bg4: #aed0ff;
+    --col2: #B4D4FF;
+    --col2: #5677a2;
+    --col3: #86B6F6;
+    --col4: #176B87;
+    --colhighlight: #139ee3;
+    --textcoldark: #333;
+    --textcollight: #fff;
+    --squarehovercol: #146ab5;
+    --colpossiblemovehighlight: rgba(40, 177, 218, 0.5);
+    --boardWidth: calc(100vw - 60px);
+}
+
+body {
+    margin: 0px;
+}
+
+#gameboard {
+    width: var(--boardWidth);
+    height: var(--boardWidth);
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    margin: 20px;
+    border: 5px solid var(--col2);
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#sidepanel {
+    width: auto;
+    height: auto;
+    font-family: Arial, sans-serif;
+    border: 30px solid var(--col2);
+    border-radius: 40px;
+    background-color: var(--bg1); 
+    margin: 20px;
+    color: var(--textcoldark);
+    text-align: center;
+}
+
+#button-container {
+    display: flex;
+    padding: 10px;
+    background-color: var(--bg2);
+}
+
+.button {
+    width: 50%;
+    background-color: var(--col3);
+    color: var(--textcollight);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: var(--col4);
+}
+
+#move-log {
+    padding: 10px;
+    background-color: var(--bg2);
+}
+#move-log-content {
+    text-align: left;
+    height: 100px;
+}
+
+#fen-data {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg3);
+}
+#current-fen-header {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#current-fen {
+    font-size: small;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#input-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: var(--bg3);
+}
+
+.input {
+    background-color: var(--col3);
+    color: var(--textcollight);
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+.input:hover {
+    background-color: var(--col4);
+}
+.input::placeholder {
+    color: var(--textcollight);
+}
+
+#engine-header {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+#slider-container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: var(--bg4);
+}
+#think-time-slider {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#checkbox-container {
+    padding-top: 0px;
+    padding-bottom: 3px;
+    background-color: var(--bg4);
+    border-radius: 0px 0px 5px 5px;
+}
+
+.pawn-promotion-container {
+    position: absolute;
+    top: calc(50vh - 110px);
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(174, 208, 255, 0.7);
+    z-index: 1;
+}
+
+.end-game-container {
+    position: absolute;
+    top: calc(50vh - 110px);
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--textcoldark);
+    font-size: 40px;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(174, 208, 255, 0.7);
+    z-index: 1;
+}
+
+.square {
+    height: 12.5%;
+    width: 12.5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square:hover {
+    background-color: var(--squarehovercol);
+}
+
+.square img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.white {
+    background-color: var(--bg1);
+}
+
+.black {
+    background-color: var(--col3);
+}
+
+.highLight {
+    background-color: var(--colhighlight);
+}
+
+.possible-target {
+    background-color: var(--colpossiblemovehighlight);
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    position: relative;
+}
+
+.possible-capture {
+    border: 10px solid var(--colpossiblemovehighlight);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+}
+
+@media (min-width: 850px) {
+    #gameboard {
+        width: 800px;
+        height: 800px;
+    }
+    #sidepanel {
+        width: 750px;
+        height: 692px;
+    }
+}
+
+@media (min-width: 1255px) {
+    #main-container {
+        flex-direction: row;
+    }
+
+    #gameboard {
+        margin-right: 0px;
+    }
+
+    #sidepanel {
+        width: 400px;
+        height: 800px;
+        margin-left: 0px;
+        border: 5px solid var(--col2);
+        border-left: 0px;
+        border-radius: 0px;
+        padding: 0px;
+    }
+
+    #move-log {
+        height: 260px;
+    }
+
+    #checkbox-container {
+        border-radius: 0px;
+    }
+}

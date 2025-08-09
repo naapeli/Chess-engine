@@ -1,0 +1,23 @@
+Endgames:
+3k4/3r4/8/8/8/8/8/3K4 w - - engine finally wins this as white!!!
+8/3K4/4P3/8/8/8/6k1/7q w - - engine finally wins this as white!!!
+3K4/4P3/8/8/8/3q4/6k1/8 w - - engine finally wins this as white!!!
+8/k7/3p4/p2P1p2/P2P1P2/8/8/K7 w - - engine finally wins this as white!!!
+4k3/8/P6p/5p2/R7/8/1P6/5K1r w - - normal endgame
+https://www.chess.com/forum/view/endgames/endgame-fen-list-and-computer-player
+
+Tricky positions:
+r3kb1r/p1qb1ppp/4pn2/6N1/1nBQ4/2N1B2P/1PP2PP1/3RR1K1 b - -
+6k1/6p1/8/6KQ/1r6/q2b4/8/8 w - - 3 fold repetition
+2bk1b1r/2p1p1pp/4pn2/R1N1N3/1p1P4/1P2B3/1PP2PPP/6K1 b - -
+2rk1br1/pbqppp2/p7/2p4p/4P3/1N5p/PPPB1PP1/R3QRK1 w - -
+r1q1kbnr/p4ppp/bp2p3/n7/2PP4/2NB4/P2N1PPP/R1BQ1RK1 b kq - -
+1k3b2/pp6/q1n3Qp/3rp3/2pPN3/P1P3P1/1P4r1/KR4NR w - - only move e4c5
+r1b2rk1/pp2b1p1/1qn1p3/3p1pN1/3P3P/P1N5/1PP1QPP1/2KR3R b - - 0 1 threat, which must be stopped is Qh5 (best move is Qc7)
+
+Checkmates:
+https://chess.stackexchange.com/questions/19633/chess-problem-database-with-pgn-or-fen
+2rk1br1/p3pppp/5n2/1pp5/1n2P3/BPQPKP1b/P2NB1Pq/R1R5 b - - 0 1 mate in 9 ply
+8/1b3r1k/7p/p6p/5p2/1p1R1P2/3RK3/1q6 b - - 0 1 mate in 9 ply
+8/1b3r1k/7p/p3Q1rp/1p3p2/3R1P2/qP3K2/4R3 b - - 0 1 mate in 17 ply (according to stockfish not my engine)
+4r1k1/pp3p1p/8/3p2p1/P2P4/1P5q/6R1/3r1BK1 b - - 0 1 mate in 7 ply (engine finds mate in 11 ply)

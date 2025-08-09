@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chess</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="main-container">
+        <div id="gameboard"></div>
+        <div id="sidepanel">
+            <h1 id="info-display">Info display</h1>
+            <p>It is <span id ="player">white</span> to move.</p>
+            <div id="move-log">
+                <h2>Move log</h2>
+                <div id="move-log-content"></div>
+            </div>
+            <div id="button-container">
+                <button class="button" id="undo-button">Undo move</button>
+                <button class="button" id="update-button">Update board</button>
+            </div>
+            <div id="fen-data">
+                <h2 id="current-fen-header">Current board</h2>
+                <p id="current-fen"></p>
+            </div>
+            <div id="input-container">
+                <input class="input" id="position-input" placeholder="fen-string eg. rbnqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RBNQKBNR">
+            </div>
+            <div id="slider-container">
+                <h2 id="engine-header">Engine</h2>
+                <p id="engine-time">Engine thinking time: <span id ="think-time">2000</span> ms</p>
+                <input type="range" min="200" max="30000" value="2000" class="slider" id="think-time-slider">
+            </div>
+            <div id="checkbox-container">
+                <input id="engine-input" type="checkbox">
+                <label for="engine-input">Play against engine</label>
+            </div>
+        </div>
+        <script src="book.js"></script>
+        <script src="pieces.js"></script>
+        <script src="zobristHashGenerator.js"></script>
+        <script src="bitboardMasks.js"></script>
+        <script src="transpositionTable.js"></script>
+        <script src="historyTable.js"></script>
+        <script src="board.js"></script>
+        <script src="engine.js"></script>
+        <script src="main.js"></script>
+    </div>
+</body>
+</html>

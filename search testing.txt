@@ -1,0 +1,28 @@
+r3kb1r/p1qb1ppp/4pn2/6N1/1nBQ4/2N1B2P/1PP2PP1/3RR1K1 b - - search on depth 4 and full window
+
+NMP Razoring RFP Nodes
+false false false 96608
+true false false 95213
+false true false 63439
+false false true 48301
+true true true 48629
+
+only reverse futility pruning enabled best???
+
+4k3/8/P6p/5p2/R7/8/1P6/5K1r w - - search on depth 7 and full window
+
+false true true 399738
+true true true 399738
+
+no effect, since only rooks for both sides
+
+2rk1br1/pbqppp2/p7/2p4p/4P3/1N5p/PPPB1PP1/R3QRK1 w - - search on depth 5 and full window
+
+false true true 186096
+true true true 189853???????????
+false false false 320953
+false false true 148798?????? why is this the best
+false true false 255423
+true false false 258602
+
+tests made before removing razoring from depths 2 and 3.
